@@ -1,0 +1,20 @@
+create :
+  Insert into doctors
+  (name,specialization,license_no,department,contact,available)
+  Values(?, ?, ?, ?, ?, ?)
+
+read:
+  select * from doctors limit ? offset ?
+
+get_doctor_by_dept:
+ select * from doctors where department = ? 
+ limit ? offset ?
+
+update_table:
+ Update doctors SET {placeholder} where doctor_id =?
+
+get_by_id:
+ select * from doctors where doctor_id =?
+
+delete_entry:
+ Delete from doctors where doctor_id in ({placeholder})

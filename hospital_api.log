@@ -1,0 +1,52 @@
+2026-06-30 23:06:50 | INFO     | hospital_api | Startup: initialising database
+2026-06-30 23:06:50 | INFO     | hospital_api | Seeded default users: admin/admin123 (role=admin), user/user123 (role=viewer)
+2026-06-30 23:07:06 | INFO     | hospital_api | GET /docs -> 200 (1.2 ms)
+2026-06-30 23:07:06 | INFO     | hospital_api | GET /openapi.json -> 200 (186.1 ms)
+2026-06-30 23:07:20 | INFO     | hospital_api | POST /appointments/history -> 401 (12.1 ms)
+2026-06-30 23:07:30 | INFO     | hospital_api | Shutdown
+2026-07-01 09:40:26 | INFO     | hospital_api | Startup: initialising database
+2026-07-01 09:40:38 | INFO     | hospital_api | GET /docs -> 200 (0.6 ms)
+2026-07-01 09:40:39 | INFO     | hospital_api | GET /openapi.json -> 200 (163.9 ms)
+2026-07-01 09:41:01 | INFO     | hospital_api | POST /appointments/history -> 401 (12.9 ms)
+2026-07-01 09:41:35 | INFO     | root | the usr trying to login is admin
+2026-07-01 09:41:36 | INFO     | hospital_api | POST /user/login -> 200 (421.2 ms)
+2026-07-01 09:43:16 | INFO     | hospital_api | POST /appointments/history -> 422 (1.5 ms)
+2026-07-01 09:43:47 | INFO     | hospital_api | POST /appointments/history -> 422 (1.7 ms)
+2026-07-01 09:44:04 | INFO     | hospital_api | POST /appointments/history -> 422 (1.5 ms)
+2026-07-01 09:45:09 | INFO     | root | fields to update {'status': 'string', 'notes': 'string', 'diagnosis': 'string'}
+2026-07-01 09:45:09 | INFO     | hospital_api | PUT /appointments -> 400 (10.4 ms)
+2026-07-01 09:45:29 | INFO     | hospital_api | POST /appointments/history -> 404 (23.7 ms)
+2026-07-01 09:45:37 | INFO     | hospital_api | Shutdown
+2026-07-01 09:46:32 | INFO     | hospital_api | Startup: initialising database
+2026-07-01 09:46:36 | INFO     | hospital_api | POST /appointments/history -> 404 (53.3 ms)
+2026-07-01 09:48:25 | INFO     | hospital_api | Shutdown
+2026-07-01 09:48:42 | INFO     | hospital_api | Startup: initialising database
+2026-07-01 09:48:45 | INFO     | hospital_api | POST /appointments/history -> 200 (53.4 ms)
+2026-07-01 09:49:19 | INFO     | hospital_api | Shutdown
+2026-07-01 09:49:21 | INFO     | hospital_api | Startup: initialising database
+2026-07-01 09:49:41 | INFO     | hospital_api | POST /appointments/history -> 200 (15238.3 ms)
+2026-07-01 09:51:25 | INFO     | hospital_api | Startup: initialising database
+2026-07-01 09:53:17 | INFO     | hospital_api | POST /appointments/history -> 200 (62747.4 ms)
+2026-07-01 21:08:37 | INFO     | hospital_api | Startup: initialising database
+2026-07-01 21:08:40 | INFO     | hospital_api | GET /docs -> 200 (3.7 ms)
+2026-07-01 21:08:41 | INFO     | hospital_api | GET /openapi.json -> 200 (160.0 ms)
+2026-07-01 21:09:03 | INFO     | root | the usr trying to login is admin
+2026-07-01 21:09:04 | INFO     | hospital_api | POST /user/login -> 200 (602.5 ms)
+2026-07-01 21:10:51 | INFO     | hospital_api | POST /appointments/history -> 200 (60271.8 ms)
+2026-07-01 21:12:34 | INFO     | hospital_api | POST /appointments/history -> 200 (69002.7 ms)
+2026-07-02 08:20:41 | INFO     | hospital_api | Startup: initialising database
+2026-07-02 08:20:43 | INFO     | hospital_api | Shutdown
+2026-10-26 19:47:09 | INFO     | hospital_api | Startup: initialising database
+2026-10-26 19:47:25 | INFO     | hospital_api | GET /docs -> 200 (0.7 ms)
+2026-10-26 19:47:25 | INFO     | hospital_api | GET /openapi.json -> 200 (76.9 ms)
+2026-10-26 19:51:40 | INFO     | root | the usr trying to login is admin
+2026-10-26 19:51:40 | INFO     | hospital_api | POST /user/login -> 200 (268.3 ms)
+2026-10-26 19:54:10 | INFO     | hospital_api | POST /appointments/history -> 422 (1.8 ms)
+2026-10-26 19:54:39 | INFO     | hospital_api | POST /appointments/history -> 422 (0.9 ms)
+2026-10-26 19:55:35 | INFO     | hospital_api | POST /appointments/history -> 200 (4.2 ms)
+2026-10-26 20:02:03 | INFO     | hospital_api | POST /doctors -> 200 (10.7 ms)
+2026-10-26 20:02:03 | INFO     | watchfiles.main | 3 changes detected
+2026-10-26 20:03:24 | INFO     | hospital_api | GET /doctors -> 200 (4.2 ms)
+2026-10-26 20:04:28 | INFO     | root | deleted doctor id is ['11']
+2026-10-26 20:04:28 | INFO     | hospital_api | DELETE /doctors -> 200 (8.8 ms)
+2026-10-26 20:04:28 | INFO     | watchfiles.main | 3 changes detected

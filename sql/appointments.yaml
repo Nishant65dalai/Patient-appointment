@@ -1,0 +1,33 @@
+history_base:
+  select a.appointment_id, a.appointment_date, a.appointment_time,
+  a.status, a.notes, a.diagnosis, p.name as patient_name, p.mrn,
+  d.doctor_id, d.name as doctor_name, d.specialization, d.department
+  from appointments a
+  join patients p on a.patient_id = p.patient_id
+  join doctors d on a.doctor_id = d.doctor_id
+  where {filters}
+  order by a.appointment_date desc
+
+get_patient_id:
+  select patient_id from patients where mrn = ?
+
+get_doctor_id:
+  select doctor_id from doctors where doctor_id = ?
+
+create:
+  insert into appointments
+  (patient_id, doctor_id, appointment_date, appointment_time, notes)
+  values (?, ?, ?, ?, ?)
+
+update_table:
+  update appointments set {placeholder} where appointment_id = ?
+
+get_by_id:
+  select a.appointment_id, a.patient_id, a.doctor_id, a.appointment_date,
+  a.appointment_time, a.status, a.notes, a.diagnosis, a.created_at,
+  p.name as patient_name, p.mrn, d.name as doctor_name,
+  d.specialization, d.department
+  from appointments a
+  join patients p on a.patient_id = p.patient_id
+  join doctors d on a.doctor_id = d.doctor_id
+  where a.appointment_id = ?
